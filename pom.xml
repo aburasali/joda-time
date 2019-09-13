@@ -354,6 +354,51 @@
     </resources>
     <!-- define build -->
     <plugins>
+
+
+<plugin>
+  <groupId>org.jacoco</groupId>
+  <artifactId>jacoco-maven-plugin</artifactId>
+  <version>0.8.0</version>
+  <executions>
+    <execution>
+      <id>default-prepare-agent</id>
+      <goals>
+	<goal>prepare-agent</goal>
+      </goals>
+    </execution>
+    <execution>
+      <id>default-report</id>
+      <phase>prepare-package</phase>
+      <goals>
+	<goal>report</goal>
+      </goals>
+    </execution>
+    <execution>
+      <id>default-check</id>
+      <goals>
+	<goal>check</goal>
+      </goals>
+      <configuration>
+	<rules>
+	  <!--   implementation is needed only for Maven 2   -->
+	  <rule implementation="org.jacoco.maven.RuleConfiguration">
+	    <element>BUNDLE</element>
+	    <limits>
+	      <!--   implementation is needed only for Maven 2   -->
+	      <limit implementation="org.jacoco.report.check.Limit">
+		<counter>COMPLEXITY</counter>
+		<value>COVEREDRATIO</value>
+		<minimum>0.60</minimum>
+	      </limit>
+	    </limits>
+	  </rule>
+	</rules>
+      </configuration>
+    </execution>
+  </executions>
+</plugin>
+
       <!-- Enforce Maven 3.5.0 -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -721,6 +766,11 @@
             </lifecycleMappingMetadata>
           </configuration>
         </plugin>
+
+
+
+
+
       </plugins>
     </pluginManagement>
   </build>
@@ -740,6 +790,12 @@
       <version>3.8.2</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-nop</artifactId>
+      <version>1.7.25</version>
+      <scope>test</scope>
+    </dependency>    
   </dependencies>
 
   <!-- ==================================================================== -->
