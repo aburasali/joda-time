@@ -20,10 +20,319 @@
   <inceptionYear>2002</inceptionYear>
 
   <!-- ==================================================================== -->
- 
+  <developers>
+    <developer>
+      <id>jodastephen</id>
+      <name>Stephen Colebourne</name>
+      <roles>
+        <role>Project Lead</role>
+      </roles>
+      <timezone>0</timezone>
+      <url>https://github.com/jodastephen</url>
+    </developer>
+    <developer>
+      <id>broneill</id>
+      <name>Brian S O'Neill</name>
+      <email></email>
+      <roles>
+        <role>Senior Developer</role>
+      </roles>
+      <url>https://github.com/broneill</url>
+    </developer>
+  </developers>
+  <contributors>
+    <contributor>
+      <name>Adrian Acala</name>
+      <url>https://github.com/AdrianAcala</url>
+    </contributor>
+    <contributor>
+      <name>Afif Ahmed</name>
+      <url>https://github.com/a7i7</url>
+    </contributor>
+    <contributor>
+      <name>Guy Allard</name>
+    </contributor>
+    <contributor>
+      <name>Brad Arndt</name>
+      <url>https://github.com/bradarndt</url>
+    </contributor>
+    <contributor>
+      <name>Mikey Austin</name>
+      <url>https://github.com/mikey-austin</url>
+    </contributor>
+    <contributor>
+      <name>Oren Benjamin</name>
+      <url>https://github.com/oby1</url>
+    </contributor>
+    <contributor>
+      <name>Fredrik Borgh</name>
+    </contributor>
+    <contributor>
+      <name>Dave Brosius</name>
+      <url>https://github.com/mebigfatguy</url>
+    </contributor>
+    <contributor>
+      <name>Dan Cavallaro</name>
+      <url>https://github.com/dancavallaro</url>
+    </contributor>
+    <contributor>
+      <name>Luc Claes</name>
+      <url>https://github.com/lucclaes</url>
+    </contributor>
+    <contributor>
+      <name>Emiliano Claria</name>
+      <url>https://github.com/emilianogc</url>
+    </contributor>
+    <contributor>
+      <name>Dan Cojocar</name>
+      <url>https://github.com/dancojocar</url>
+    </contributor>
+    <contributor>
+      <name>Evgeniy Devyatykh</name>
+      <url>https://github.com/john9x</url>
+    </contributor>
+    <contributor>
+      <name>dspitfire</name>
+      <url>https://github.com/dspitfire</url>
+    </contributor>
+    <contributor>
+      <name>Christopher Elkins</name>
+      <url>https://github.com/celkins</url>
+    </contributor>
+    <contributor>
+      <name>emopers</name>
+      <url>https://github.com/emopers</url>
+    </contributor>
+    <contributor>
+      <name>Michael Ernst</name>
+      <url>https://github.com/mernst</url>
+    </contributor>
+    <contributor>
+      <name>Jeroen van Erp</name>
+    </contributor>
+    <contributor>
+      <name>Gwyn Evans</name>
+    </contributor>
+    <contributor>
+      <name>Niklas Fiekas</name>
+      <url>https://github.com/niklasf</url>
+    </contributor>
+    <contributor>
+      <name>John Fletcher</name>
+    </contributor>
+    <contributor>
+      <name>Sean Geoghegan</name>
+    </contributor>
+    <contributor>
+      <name>Jim Gough</name>
+      <url>https://github.com/jpgough</url>
+    </contributor>
+    <contributor>
+      <name>Craig Gidney</name>
+      <url>https://github.com/Strilanc</url>
+    </contributor>
+    <contributor>
+      <name>haguenau</name>
+      <url>https://github.com/haguenau</url>
+    </contributor>
+    <contributor>
+      <name>Michael Hausegger</name>
+      <url>https://github.com/TheRealHaui</url>
+    </contributor>
+    <contributor>
+      <name>Kaj Hejer</name>
+      <url>https://github.com/kajh</url>
+    </contributor>
+    <contributor>
+      <name>Rowan Hill</name>
+      <url>https://github.com/rowanhill</url>
+    </contributor>
+    <contributor>
+      <name>LongHua Huang</name>
+      <url>https://github.com/longhua</url>
+    </contributor>
+    <contributor>
+      <name>Brendan Humphreys</name>
+      <url>https://github.com/pandacalculus</url>
+    </contributor>
+    <contributor>
+      <name>Vsevolod Ivanov</name>
+      <url>https://github.com/seva-ask</url>
+    </contributor>
+    <contributor>
+      <name>Ing. Jan Kalab</name>
+      <url>https://github.com/Pitel</url>
+    </contributor>
+    <contributor>
+      <name>Ashish Katyal</name>
+    </contributor>
+    <contributor>
+      <name>Kurt Alfred Kluever</name>
+      <url>https://github.com/kluever</url>
+    </contributor>
+    <contributor>
+      <name>Martin Kneissl</name>
+      <url>https://github.com/mkneissl</url>
+    </contributor>
+    <contributor>
+      <name>Sebastian Kurten</name>
+      <url>https://github.com/sebkur</url>
+    </contributor>
+    <contributor>
+      <name>Fabian Lange</name>
+      <url>https://github.com/CodingFabian</url>
+    </contributor>
+    <contributor>
+      <name>Vidar Larsen</name>
+      <url>https://github.com/vlarsen</url>
+    </contributor>
+    <contributor>
+      <name>Kasper Laudrup</name>
+    </contributor>
+    <contributor>
+      <name>Jeff Lavallee</name>
+      <url>https://github.com/jlavallee</url>
+    </contributor>
+    <contributor>
+      <name>Chung-yeol Lee</name>
+      <url>https://github.com/chungyeol</url>
+    </contributor>
+    <contributor>
+      <name>Antonio Leitao</name>
+    </contributor>
+    <contributor>
+      <name>Kostas Maistrelis</name>
+    </contributor>
+    <contributor>
+      <name>mjunginger</name>
+      <url>https://github.com/mjunginger</url>
+    </contributor>
+    <contributor>
+      <name>Al Major</name>
+    </contributor>
+    <contributor>
+      <name>Pete Marsh</name>
+      <url>https://github.com/petedmarsh</url>
+    </contributor>
+    <contributor>
+      <name>Blair Martin</name>
+    </contributor>
+    <contributor>
+      <name>Paul Martin</name>
+      <url>https://github.com/pgpx</url>
+    </contributor>
+    <contributor>
+      <name>Katy P</name>
+      <url>https://github.com/katyp</url>
+    </contributor>
+    <contributor>
+      <name>Amling Palantir</name>
+      <url>https://github.com/AmlingPalantir</url>
+    </contributor>
+    <contributor>
+      <name>Julen Parra</name>
+    </contributor>
+    <contributor>
+      <name>Jorge Perez</name>
+      <url>https://github.com/jperezalv</url>
+    </contributor>
+    <contributor>
+      <name>Rok Piltaver</name>
+      <url>https://github.com/Rok-Piltaver</url>
+    </contributor>
+    <contributor>
+      <name>Michael Plump</name>
+    </contributor>
+    <contributor>
+      <name>Bjorn Pollex</name>
+      <url>https://github.com/bjoernpollex</url>
+    </contributor>
+    <contributor>
+      <name>Ryan Propper</name>
+    </contributor>
+    <contributor>
+      <name>Anton Qiu</name>
+      <url>https://github.com/antonqiu</url>
+    </contributor>
+    <contributor>
+      <name>Zhanbolat Raimbekov</name>
+      <url>https://github.com/janbolat</url>
+    </contributor>
+    <contributor>
+      <name>Mike Schrag</name>
+    </contributor>
+    <contributor>
+      <name>Albert Scotto</name>
+      <url>https://github.com/alb-i986</url>
+    </contributor>
+    <contributor>
+      <name>Hajime Senuma</name>
+      <url>https://github.com/hajimes</url>
+    </contributor>
+    <contributor>
+      <name>Kandarp Shah</name>
+    </contributor>
+    <contributor>
+      <name>Alexander Shopov</name>
+      <url>https://github.com/alshopov</url>
+    </contributor>
+    <contributor>
+      <name>Francois Staes</name>
+    </contributor>
+    <contributor>
+      <name>Grzegorz Swierczynski</name>
+      <url>https://github.com/gswierczynski</url>
+    </contributor>
+    <contributor>
+      <name>Jason Tedor</name>
+      <url>https://github.com/jasontedor</url>
+    </contributor>
+    <contributor>
+      <name>trejkaz</name>
+      <url>https://github.com/trejkaz</url>
+    </contributor>
+    <contributor>
+      <name>Ricardo Trindade</name>
+    </contributor>
+    <contributor>
+      <name>Bram Van Dam</name>
+      <url>https://github.com/codematters</url>
+    </contributor>
+    <contributor>
+      <name>Ed Wagstaff</name>
+      <url>https://github.com/edwag</url>
+    </contributor>
+    <contributor>
+      <name>Can Yapan</name>
+      <url>https://github.com/canyapan</url>
+    </contributor>
+    <contributor>
+      <name>Maxim Zhao</name>
+    </contributor>
+    <contributor>
+      <name>Alex</name>
+      <url>https://github.com/nyrk</url>
+    </contributor>
+  </contributors>
 
   <!-- ==================================================================== -->
-
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <connection>scm:git:https://github.com/JodaOrg/joda-time.git</connection>
+    <developerConnection>scm:git:git@github.com:JodaOrg/joda-time.git</developerConnection>
+    <url>https://github.com/JodaOrg/joda-time</url>
+    <tag>HEAD</tag>
+  </scm>
+  <organization>
+    <name>Joda.org</name>
+    <url>https://www.joda.org</url>
+  </organization>
 
   <!-- ==================================================================== -->
   <build>
@@ -44,8 +353,6 @@
       </resource>
     </resources>
     <!-- define build -->
-
-
     <plugins>
 
 
@@ -160,11 +467,8 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
-	<testFailureIgnore> true</testFailureIgnore>
           <includes>
-     <!--        <include>**/TestAllPackages.java</include>
-	    <include>**/Foo_ESTest.java</include>
--->
+            <include>**/TestAllPackages.java</include>
           </includes>
           <!--argLine>-Djava.security.manager -Djava.security.policy=${basedir}/src/test/resources/java.policy</argLine-->
         </configuration>
@@ -483,13 +787,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.12</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.evosuite</groupId>
-      <artifactId>evosuite-standalone-runtime</artifactId>
-      <version>1.0.6</version>
+      <version>3.8.2</version>
       <scope>test</scope>
     </dependency>
     <dependency>
