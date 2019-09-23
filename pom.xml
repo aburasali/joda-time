@@ -156,19 +156,7 @@
         </configuration>
       </plugin>
       <!-- Setup testing -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <configuration>
-	<testFailureIgnore> true</testFailureIgnore>
-          <includes>
-     <!--        <include>**/TestAllPackages.java</include>
-	    <include>**/Foo_ESTest.java</include>
--->
-          </includes>
-          <!--argLine>-Djava.security.manager -Djava.security.policy=${basedir}/src/test/resources/java.policy</argLine-->
-        </configuration>
-      </plugin>
+
       <!-- Setup Jar file manifest entries -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -291,6 +279,19 @@
     <!-- Manage plugin versions -->
     <pluginManagement>
       <plugins>
+
+  <plugin>
+      <groupId>org.evosuite.plugins</groupId>
+      <artifactId>evosuite-maven-plugin</artifactId>
+      <version>${evosuiteVersion}</version>
+      <executions><execution>
+         <goals> <goal> prepare </goal> </goals>
+         <phase> process-test-classes </phase>
+      </execution></executions>
+  </plugin>
+
+
+
         <!-- Maven build and reporting plugins (alphabetical) -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -736,6 +737,8 @@
 
   <!-- ==================================================================== -->
   <properties>
+
+ <evosuiteVersion>1.0.6</evosuiteVersion>
     <!-- Plugin version numbers -->
     <build-helper-maven-plugin.version>3.0.0</build-helper-maven-plugin.version>
     <maven-assembly-plugin.version>3.1.0</maven-assembly-plugin.version>
@@ -782,5 +785,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <tz.database.version>2019b</tz.database.version>
+
+
   </properties>
 </project>
