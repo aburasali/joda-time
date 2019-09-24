@@ -18,8 +18,7 @@ import org.joda.time.Months;
 import org.joda.time.MutableInterval;
 import org.junit.runner.RunWith;
 
-@RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true, useJEE = true) 
-public class MutableInterval_ESTest extends MutableInterval_ESTest_scaffolding {
+public class MutableInterval_ESTest  {
 
   @Test(timeout = 4000)
   public void test00()  throws Throwable  {

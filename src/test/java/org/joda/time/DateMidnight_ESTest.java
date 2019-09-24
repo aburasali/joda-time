@@ -58,8 +58,7 @@ import org.joda.time.format.PeriodParser;
 import org.joda.time.format.PeriodPrinter;
 import org.junit.runner.RunWith;
 
-@RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true, useJEE = true) 
-public class DateMidnight_ESTest extends DateMidnight_ESTest_scaffolding {
+public class DateMidnight_ESTest  {
 
   @Test(timeout = 4000)
   public void test000()  throws Throwable  {

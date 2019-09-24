@@ -28,8 +28,7 @@ import org.joda.time.chrono.LenientChronology;
 import org.joda.time.field.UnsupportedDateTimeField;
 import org.junit.runner.RunWith;
 
-@RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true, useJEE = true) 
-public class DateTimeFieldType_ESTest extends DateTimeFieldType_ESTest_scaffolding {
+public class DateTimeFieldType_ESTest  {
 
   @Test(timeout = 4000)
   public void test00()  throws Throwable  {

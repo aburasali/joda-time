@@ -31,8 +31,7 @@ import org.joda.time.format.PeriodParser;
 import org.joda.time.format.PeriodPrinter;
 import org.junit.runner.RunWith;
 
-@RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true, useJEE = true) 
-public class MutablePeriod_ESTest extends MutablePeriod_ESTest_scaffolding {
+public class MutablePeriod_ESTest  {
 
   @Test(timeout = 4000)
   public void test00()  throws Throwable  {

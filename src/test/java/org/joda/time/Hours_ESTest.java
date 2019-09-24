@@ -12,7 +12,6 @@ import org.evosuite.runtime.EvoRunner;
 import org.evosuite.runtime.EvoRunnerParameters;
 import org.joda.time.Days;
 import org.joda.time.Duration;
-import org.joda.time.Foo;
 import org.joda.time.Hours;
 import org.joda.time.Instant;
 import org.joda.time.Minutes;
@@ -24,9 +23,42 @@ import org.joda.time.ReadablePeriod;
 import org.joda.time.Seconds;
 import org.joda.time.Weeks;
 import org.junit.runner.RunWith;
-
-@RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true, useJEE = true) 
-public class Hours_ESTest extends Hours_ESTest_scaffolding {
+import org.junit.Test;
+import static org.junit.Assert.*;
+import org.joda.time.Days;
+import org.evosuite.runtime.EvoRunner;
+import org.evosuite.runtime.EvoRunnerParameters;
+import org.joda.time.Chronology;
+import org.joda.time.DateTime;
+import org.joda.time.DateTimeFieldType;
+import org.joda.time.DateTimeZone;
+import org.joda.time.Duration;
+import org.joda.time.DurationFieldType;
+import org.joda.time.Hours;
+import org.joda.time.Interval;
+import org.joda.time.LocalDate;
+import org.joda.time.LocalDateTime;
+import org.joda.time.LocalTime;
+import org.joda.time.Minutes;
+import org.joda.time.MutableDateTime;
+import org.joda.time.MutablePeriod;
+import org.joda.time.Partial;
+import org.joda.time.Period;
+import org.joda.time.PeriodType;
+import org.joda.time.ReadableInstant;
+import org.joda.time.ReadableInterval;
+import org.joda.time.ReadablePartial;
+import org.joda.time.Seconds;
+import org.joda.time.Weeks;
+import org.joda.time.chrono.GJChronology;
+import org.joda.time.chrono.GregorianChronology;
+import org.joda.time.chrono.IslamicChronology;
+import org.joda.time.tz.FixedDateTimeZone;
+import org.joda.time.format.DateTimeFormatter;
+import org.joda.time.format.DateTimeParser;
+import org.joda.time.format.DateTimePrinter;
+import org.junit.runner.RunWith;
+public class Hours_ESTest  {
 
   @Test(timeout = 4000)
   public void test00()  throws Throwable  {

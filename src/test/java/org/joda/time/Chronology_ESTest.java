@@ -12,6 +12,11 @@ import java.util.TimeZone;
 import org.evosuite.runtime.EvoRunner;
 import org.evosuite.runtime.EvoRunnerParameters;
 import org.evosuite.runtime.mock.java.util.MockGregorianCalendar;
+import static org.evosuite.shaded.org.mockito.Mockito.*;
+import static org.evosuite.runtime.EvoAssertions.*;
+import org.evosuite.runtime.EvoRunner;
+import org.evosuite.runtime.EvoRunnerParameters;
+import org.evosuite.runtime.ViolatedAssumptionAnswer;
 import org.joda.time.Chronology;
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeField;
@@ -46,8 +51,7 @@ import org.joda.time.chrono.StrictChronology;
 import org.joda.time.chrono.ZonedChronology;
 import org.junit.runner.RunWith;
 
-@RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true, useJEE = true) 
-public class Chronology_ESTest extends Chronology_ESTest_scaffolding {
+public class Chronology_ESTest  {
 
   @Test(timeout = 4000)
   public void test00()  throws Throwable  {
@@ -304,19 +308,6 @@ public class Chronology_ESTest extends Chronology_ESTest_scaffolding {
       assertNotNull(dateTimeField0);
   }
 
-  @Test(timeout = 4000)
-  public void test32()  throws Throwable  {
-      BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstance();
-      DateTimeZone dateTimeZone0 = buddhistChronology0.getZone();
-      assertEquals("UTC", dateTimeZone0.getID());
-  }
-
-  @Test(timeout = 4000)
-  public void test33()  throws Throwable  {
-      IslamicChronology islamicChronology0 = IslamicChronology.getInstance();
-      long long0 = islamicChronology0.getDateTimeMillis(0L, 0, 0, 0, 0);
-      assertEquals(0L, long0);
-  }
 
   @Test(timeout = 4000)
   public void test34()  throws Throwable  {
@@ -328,13 +319,6 @@ public class Chronology_ESTest extends Chronology_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
-  public void test35()  throws Throwable  {
-      ISOChronology iSOChronology0 = ISOChronology.getInstance((DateTimeZone) null);
-      long long0 = iSOChronology0.getDateTimeMillis((-1L), 0, 0, 0, 0);
-      assertEquals((-86400000L), long0);
-  }
-
-  @Test(timeout = 4000)
   public void test36()  throws Throwable  {
       ISOChronology iSOChronology0 = ISOChronology.getInstanceUTC();
       LenientChronology lenientChronology0 = LenientChronology.getInstance(iSOChronology0);
@@ -342,13 +326,6 @@ public class Chronology_ESTest extends Chronology_ESTest_scaffolding {
       assertEquals((-95529755445551L), long0);
   }
 
-  @Test(timeout = 4000)
-  public void test37()  throws Throwable  {
-      GJChronology gJChronology0 = GJChronology.getInstance();
-      LenientChronology lenientChronology0 = LenientChronology.getInstance(gJChronology0);
-      long long0 = lenientChronology0.getDateTimeMillis(0, 0, 0, 0);
-      assertEquals((-62170156800000L), long0);
-  }
 
   @Test(timeout = 4000)
   public void test38()  throws Throwable  {
@@ -625,26 +602,6 @@ public class Chronology_ESTest extends Chronology_ESTest_scaffolding {
       }
   }
 
-  @Test(timeout = 4000)
-  public void test65()  throws Throwable  {
-      BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstance();
-      DateTime dateTime0 = DateTime.now((Chronology) buddhistChronology0);
-      Days days0 = Days.TWO;
-      Duration duration0 = days0.toStandardDuration();
-      DateTime dateTime1 = dateTime0.minus((ReadableDuration) duration0);
-      LimitChronology limitChronology0 = LimitChronology.getInstance(buddhistChronology0, dateTime1, dateTime0);
-      // Undeclared exception!
-      try { 
-        limitChronology0.get((ReadablePeriod) days0, 4123L);
-        fail("Expecting exception: IllegalArgumentException");
-      
-      } catch(IllegalArgumentException e) {
-         //
-         // The minuend instant is below the supported minimum of 2557-02-12T20:21:21.320Z (BuddhistChronology[UTC])
-         //
-         verifyException("org.joda.time.chrono.LimitChronology", e);
-      }
-  }
 
   @Test(timeout = 4000)
   public void test66()  throws Throwable  {

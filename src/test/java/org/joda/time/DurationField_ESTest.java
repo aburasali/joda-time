@@ -27,8 +27,7 @@ import org.joda.time.field.ScaledDurationField;
 import org.joda.time.field.UnsupportedDurationField;
 import org.junit.runner.RunWith;
 
-@RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true, useJEE = true) 
-public class DurationField_ESTest extends DurationField_ESTest_scaffolding {
+public class DurationField_ESTest  {
 
   @Test(timeout = 4000)
   public void test00()  throws Throwable  {

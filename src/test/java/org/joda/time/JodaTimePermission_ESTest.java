@@ -13,8 +13,7 @@ import org.evosuite.runtime.EvoRunnerParameters;
 import org.joda.time.JodaTimePermission;
 import org.junit.runner.RunWith;
 
-@RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true, useJEE = true) 
-public class JodaTimePermission_ESTest extends JodaTimePermission_ESTest_scaffolding {
+public class JodaTimePermission_ESTest  {
 
   @Test(timeout = 4000)
   public void test0()  throws Throwable  {

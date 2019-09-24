@@ -499,6 +499,8 @@
       <version>1.7.25</version>
       <scope>test</scope>
     </dependency>    
+
+
   </dependencies>
 
   <!-- ==================================================================== -->
@@ -737,7 +739,8 @@
 
   <!-- ==================================================================== -->
   <properties>
-
+<maven.compiler.source>1.5</maven.compiler.source>
+<maven.compiler.target>1.5</maven.compiler.target>
  <evosuiteVersion>1.0.6</evosuiteVersion>
     <!-- Plugin version numbers -->
     <build-helper-maven-plugin.version>3.0.0</build-helper-maven-plugin.version>

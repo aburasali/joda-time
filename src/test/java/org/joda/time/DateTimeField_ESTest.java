@@ -49,10 +49,8 @@ import org.joda.time.field.SkipUndoDateTimeField;
 import org.joda.time.field.UnsupportedDateTimeField;
 import org.junit.runner.RunWith;
 
-@RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true, useJEE = true) 
-public class DateTimeField_ESTest extends DateTimeField_ESTest_scaffolding {
-
-  @Test(timeout = 4000)
+public class DateTimeField_ESTest {
+@Test(timeout = 4000)
   public void test000()  throws Throwable  {
       BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstance();
       DateTimeField dateTimeField0 = buddhistChronology0.dayOfYear();
